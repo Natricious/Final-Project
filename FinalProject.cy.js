@@ -73,7 +73,7 @@ describe('Test Cases', () => {
       cy.get('.location').type('Tbilisi. G.Pheradze Street N5');
       cy.get('.cart-submit').click();
       cy.origin('https://ecommerce.ufc.ge/ecomm2/ClientHandler', () => {
-        cy.contains('გადაიხადე').should('be.visible')
+        cy.contains('გადაიხადე').should('be.visible');
       })
     })
 })
